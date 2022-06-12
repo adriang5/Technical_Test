@@ -1,0 +1,480 @@
+{
+  "id": "5abb3ad0-afe1-421f-aba4-b207cd69fe27",
+  "version": "2.0",
+  "name": "DNV project",
+  "url": "https://www.dnv.com/",
+  "tests": [{
+    "id": "2f5ef948-42ff-4c68-bc6b-9abe4bc9e0c2",
+    "name": "Job vacant Search",
+    "commands": [{
+      "id": "1c8a98e8-0f4b-495a-a3af-89d50083c457",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.dnv.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba6ac640-e98c-4026-b969-78b09c4fe159",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ec49173-a401-458c-b10a-8dbc2b76f3de",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Vacant positions",
+      "targets": [
+        ["linkText=Vacant positions", "linkText"],
+        ["css=.carousel__slide-link:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Vacant positions')]", "xpath:link"],
+        ["xpath=//section[@id='dnvgl']/section[2]/div/section/section/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/careers/index.html')])[4]", "xpath:href"],
+        ["xpath=//section/section/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "debd5439-3e63-4a64-8f8d-63729f596b98",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View all vacant positions",
+      "targets": [
+        ["linkText=View all vacant positions", "linkText"],
+        ["css=.grid-container:nth-child(4) .button-tiles__link", "css:finder"],
+        ["xpath=//a[contains(text(),'View all vacant positions')]", "xpath:link"],
+        ["xpath=//section[@id='dnvgl']/div[2]/section/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://careers-dnv.icims.com/jobs/?_ga=2.109038726.568051097.1654957821-105887935.1653912696')]", "xpath:href"],
+        ["xpath=//div[2]/section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View all vacant positions')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1167",
+      "windowTimeout": 2000
+    }, {
+      "id": "43d693a1-7839-4d42-9294-853b41518723",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1167}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2492c3ca-15ec-4aa5-95de-6ae65717cf7d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4eb6989-15c8-4c7e-be18-7be026db779c",
+      "comment": "",
+      "command": "click",
+      "target": "id=jsb_f_keywords_i",
+      "targets": [
+        ["id=jsb_f_keywords_i", "id"],
+        ["name=searchKeyword", "name"],
+        ["css=#jsb_f_keywords_i", "css:finder"],
+        ["xpath=//input[@id='jsb_f_keywords_i']", "xpath:attributes"],
+        ["xpath=//div[@id='advanced_search_filters_mobile_modal_no_show']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e21ecba1-4f12-471d-8dfa-29cabed9403e",
+      "comment": "",
+      "command": "type",
+      "target": "id=jsb_f_keywords_i",
+      "targets": [
+        ["id=jsb_f_keywords_i", "id"],
+        ["name=searchKeyword", "name"],
+        ["css=#jsb_f_keywords_i", "css:finder"],
+        ["xpath=//input[@id='jsb_f_keywords_i']", "xpath:attributes"],
+        ["xpath=//div[@id='advanced_search_filters_mobile_modal_no_show']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "QA test engineer"
+    }, {
+      "id": "21552dd7-1a9a-4b69-a8e9-bd6611e04fd1",
+      "comment": "",
+      "command": "click",
+      "target": "id=jsb_form_submit_i",
+      "targets": [
+        ["id=jsb_form_submit_i", "id"],
+        ["css=#jsb_form_submit_i", "css:finder"],
+        ["xpath=//input[@id='jsb_form_submit_i']", "xpath:attributes"],
+        ["xpath=//div[@id='advanced_search_filters_mobile_modal_no_show']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6715c34a-c075-4854-a6db-1e6e85810836",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.row:nth-child(1) > .col-xs-12 h2",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-xs-12 h2", "css:finder"],
+        ["xpath=//a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Senior Front-end Engineer')]", "xpath:innerText"]
+      ],
+      "value": "Senior Front-end Engineer"
+    }, {
+      "id": "5dab7b3c-e806-4608-a5d9-aa771f2e559e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.row:nth-child(2) h2",
+      "targets": [
+        ["css=.row:nth-child(2) h2", "css:finder"],
+        ["xpath=//div[2]/div[3]/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Mechanical Engineer')]", "xpath:innerText"]
+      ],
+      "value": "Mechanical Engineer"
+    }, {
+      "id": "a452913d-1580-4228-ab27-064589ac0fee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.row:nth-child(3) h2",
+      "targets": [
+        ["css=.row:nth-child(3) h2", "css:finder"],
+        ["xpath=//div[3]/div[3]/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Senior QA Engineer')]", "xpath:innerText"]
+      ],
+      "value": "Senior QA Engineer"
+    }, {
+      "id": "893f9056-6fea-4abe-85e9-fa9a561398a2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.row:nth-child(4) h2",
+      "targets": [
+        ["css=.row:nth-child(4) h2", "css:finder"],
+        ["xpath=//div[4]/div[3]/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'QA Test Engineer')]", "xpath:innerText"]
+      ],
+      "value": "QA Test Engineer"
+    }]
+  }, {
+    "id": "cac90d93-353b-470d-b701-34373b5ab398",
+    "name": "GermanyLanguage",
+    "commands": [{
+      "id": "0d7bcd09-38d4-4d39-ae64-07158694bbea",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.dnv.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8f330df-be2b-439f-bd0e-fd2be5eb7555",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28b2a61a-c224-4027-989b-4f08ec262d66",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Global",
+      "targets": [
+        ["linkText=Global", "linkText"],
+        ["css=.region-selection__btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Global')]", "xpath:link"],
+        ["xpath=//section[@id='dnvgl']/header/section/aside/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//section/aside/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Global')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d5375da-08d1-4d75-b75c-d0dc024e4735",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Germany",
+      "targets": [
+        ["linkText=Germany", "linkText"],
+        ["css=.region-selection__nav-list:nth-child(2) > .region-selection__nav-list-item:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Germany')]", "xpath:link"],
+        ["xpath=//section[@id='dnvgl']/header/section/aside/nav/section/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.dnv.de/?_ga=2.83788946.568051097.1654957821-105887935.1653912696')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Germany')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35932f1b-5576-4a86-9022-5591aa7213e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a[contains(text(),'Ihre Branche')]",
+      "targets": [
+        ["css=.the-header__nav-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Ihre Branche')]", "xpath:link"],
+        ["xpath=//section[@id='dnvgl']/header/section/nav/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"]
+      ],
+      "value": "IHRE BRANCHE"
+    }, {
+      "id": "18d572b8-096e-4127-b9cb-56596eab1639",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.the-header__nav-item:nth-child(2)",
+      "targets": [
+        ["css=.the-header__nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Trends')]", "xpath:link"],
+        ["xpath=//section[@id='dnvgl']/header/section/nav/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": "TRENDS"
+    }, {
+      "id": "4e050ffa-a648-4b4a-b13c-f5000e48f5da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.the-header__nav-item:nth-child(3)",
+      "targets": [
+        ["css=.the-header__nav-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Karriere')]", "xpath:link"],
+        ["xpath=//section[@id='dnvgl']/header/section/nav/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": "KARRIERE"
+    }, {
+      "id": "d6ebc1bc-e42d-465c-af99-a2ad993694a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.the-header__nav-item:nth-child(4)",
+      "targets": [
+        ["css=.the-header__nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Über uns')]", "xpath:link"],
+        ["xpath=//section[@id='dnvgl']/header/section/nav/a[4]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"]
+      ],
+      "value": "ÜBER UNS"
+    }]
+  }, {
+    "id": "e411fe58-d338-403b-8401-9b04084c9d93",
+    "name": "RegisterApplyInterface",
+    "commands": [{
+      "id": "fd60de4c-75a4-4b34-b2a5-4a67b4c4f223",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.dnv.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5457627d-fde6-4007-8619-14c766f633cd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "348b0d65-ffac-40a7-a3b7-95e01e4e3a3a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Vacant positions",
+      "targets": [
+        ["linkText=Vacant positions", "linkText"],
+        ["css=.carousel__slide-link:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Vacant positions')]", "xpath:link"],
+        ["xpath=//section[@id='dnvgl']/section[2]/div/section/section/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/careers/index.html')])[4]", "xpath:href"],
+        ["xpath=//section/section/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "804d9408-cd59-41a4-b2d8-cd50f645f16d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View all vacant positions",
+      "targets": [
+        ["linkText=View all vacant positions", "linkText"],
+        ["css=.grid-container:nth-child(4) .button-tiles__link", "css:finder"],
+        ["xpath=//a[contains(text(),'View all vacant positions')]", "xpath:link"],
+        ["xpath=//section[@id='dnvgl']/div[2]/section/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://careers-dnv.icims.com/jobs/?_ga=2.26188603.743063465.1655053274-105887935.1653912696')]", "xpath:href"],
+        ["xpath=//div[2]/section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View all vacant positions')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7752",
+      "windowTimeout": 2000
+    }, {
+      "id": "0c9dd9c9-71a6-43a7-a987-ad993ddc73f4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7752}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17e89e6c-9c06-4d1b-bdee-628e97277bba",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "a76ab662-9517-414f-8077-f5cff2ed6df8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log back in!",
+      "targets": [
+        ["linkText=Log back in!", "linkText"],
+        ["css=.iCIMS_userMenuLink > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log back in!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://careers-dnv.icims.com/jobs/login?loginOnly=1&redirect=&in_iframe=1&hashed=-435770426')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log back in!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3edb2beb-6d75-4c5b-8bc0-187548193501",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_name_i",
+      "targets": [
+        ["id=login_name_i", "id"],
+        ["name=css_loginName", "name"],
+        ["css=#login_name_i", "css:finder"],
+        ["xpath=//input[@id='login_name_i']", "xpath:attributes"],
+        ["xpath=//form[@id='css_loginForm']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "user_email"
+    }, {
+      "id": "f6149fba-ed7f-4391-9615-af96b60a09d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_pass_i",
+      "targets": [
+        ["id=login_pass_i", "id"],
+        ["name=css_password", "name"],
+        ["css=#login_pass_i", "css:finder"],
+        ["xpath=//input[@id='login_pass_i']", "xpath:attributes"],
+        ["xpath=//form[@id='css_loginForm']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "user_password"
+    }, {
+      "id": "8806bc51-8c9c-4077-b6f9-679415538ed6",
+      "comment": "",
+      "command": "click",
+      "target": "id=introp_form_submit_i",
+      "targets": [
+        ["id=introp_form_submit_i", "id"],
+        ["name=css_loginButton", "name"],
+        ["css=#introp_form_submit_i", "css:finder"],
+        ["xpath=//input[@id='introp_form_submit_i']", "xpath:attributes"],
+        ["xpath=//form[@id='css_loginForm']/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "048dae44-e51f-4752-888f-903706d6d28c",
+      "comment": "",
+      "command": "open",
+      "target": "https://careers-dnv.icims.com/jobs/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c53fcd5-c7ed-420a-95e9-e90b5cd87fc9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Search Current Opportunities",
+      "targets": [
+        ["linkText=Search Current Opportunities", "linkText"],
+        ["css=.iCIMS_Anchor:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://careers-dnv.icims.com/jobs/search?ss=1&in_iframe=1')]", "xpath:href"],
+        ["xpath=//div[4]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4973da5-e9bc-47e0-839c-999fcb25ab5d",
+      "comment": "",
+      "command": "click",
+      "target": "id=jsb_f_keywords_i",
+      "targets": [
+        ["id=jsb_f_keywords_i", "id"],
+        ["name=searchKeyword", "name"],
+        ["css=#jsb_f_keywords_i", "css:finder"],
+        ["xpath=//input[@id='jsb_f_keywords_i']", "xpath:attributes"],
+        ["xpath=//div[@id='advanced_search_filters_mobile_modal_no_show']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c81eca36-fb07-4808-97fb-93ba0eea0d94",
+      "comment": "",
+      "command": "type",
+      "target": "id=jsb_f_keywords_i",
+      "targets": [
+        ["id=jsb_f_keywords_i", "id"],
+        ["name=searchKeyword", "name"],
+        ["css=#jsb_f_keywords_i", "css:finder"],
+        ["xpath=//input[@id='jsb_f_keywords_i']", "xpath:attributes"],
+        ["xpath=//div[@id='advanced_search_filters_mobile_modal_no_show']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "QA test engineer"
+    }, {
+      "id": "4162a715-80a6-4ddc-be41-a0cff095cdef",
+      "comment": "",
+      "command": "click",
+      "target": "id=jsb_form_submit_i",
+      "targets": [
+        ["id=jsb_form_submit_i", "id"],
+        ["css=#jsb_form_submit_i", "css:finder"],
+        ["xpath=//input[@id='jsb_form_submit_i']", "xpath:attributes"],
+        ["xpath=//div[@id='advanced_search_filters_mobile_modal_no_show']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "932fb844-6f97-4baf-a66e-c85573334076",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-xs-12 h2",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-xs-12 h2", "css:finder"],
+        ["xpath=//a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Senior Front-end Engineer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36bba59d-833f-404e-bf93-ebf6bc50683b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iCIMS_ApplyOnlineButton .iCIMS_LongLabel",
+      "targets": [
+        ["css=.iCIMS_ApplyOnlineButton .iCIMS_LongLabel", "css:finder"],
+        ["xpath=//div[@id='jobOptionsMobile']/a/div/span", "xpath:idRelative"],
+        ["xpath=//a/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Apply for this job online')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ea61661-22df-4838-9be2-a1af1c64d71e",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fb83cc4c-caec-4352-97e3-a81ffada0388",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2f5ef948-42ff-4c68-bc6b-9abe4bc9e0c2"]
+  }],
+  "urls": ["https://www.dnv.com/"],
+  "plugins": []
+}
