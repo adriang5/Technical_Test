@@ -11,3 +11,5 @@ To run these tests, you need to have downloaded the Selenium IDE pluggin in Chro
 In one of the test, RegisterApplyInterface, you have to change the user and password to pass it. Select the step and change the Value field with a correct one.
 
 ![image](https://user-images.githubusercontent.com/22502271/173246541-99514d22-50f2-4f8b-9985-314448789149.png)
+
+Thanks you!
